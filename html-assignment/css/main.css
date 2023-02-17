@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: mediumpurple;
+}
+
+header, footer{
+    background-color: deeppink;
+}
+
+h2 {
+    color: greenyellow;
+    background-color: deeppink;
+}
+
+h3 {
+    color: greenyellow;
+    background-color: deeppink;
+}
+.site-title{
+    color: greenyellow;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black ;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul li:nth-child(odd){
+    background-color:olivedrab;
+    color: aliceblue;
+    
+}
+
+#bq{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: maroon;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: lightpink;
+    border-style: outset;
+    border-width: 3px;
+    border-color: darkgray;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: gray;
+}
