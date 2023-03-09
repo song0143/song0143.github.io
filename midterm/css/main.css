@@ -1,13 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #aad4cf; /* 蓝色背景 */
+  }
+  
+.container {
+    max-width: 800px; /* 设置最大宽度 */
+    margin: 0 auto; /* 居中 */
+    padding: 0px 50px 0px 50px; /* 左右各留出空白区域 */
+    box-sizing: border-box; /* 设置盒模型为border-box */
+  }
+
 .header-container {
     position: relative;
     display: inline-block;
   }
-  .header-container img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+
+.header-container img {
+    display: block; /*the block element can set the width and height.*/ 
+    max-width: 100%; /*ensure that its width does not exceed its container*/   
+    height: auto; /*the height is automatically adjusted.*/
   }
-  .header-container h1 {
+  
+.header-container h1 {
     position: absolute;
     top: 50%;
     left: 50%;
