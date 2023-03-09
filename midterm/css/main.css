@@ -1,0 +1,20 @@
+.header-container {
+    position: relative;
+    display: inline-block;
+  }
+  .header-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .header-container h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
