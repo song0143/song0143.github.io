@@ -51,6 +51,7 @@ main {
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 0px;
+    padding-bottom: 15px;
     margin-top: 0px;
     border-top: 0px;
   }
@@ -64,6 +65,7 @@ h2,h3 {
 section p, ul {
     font-size: 8px;
     line-height: 1.2;
+    font-weight: 400;
 }
 
 li {
@@ -86,6 +88,8 @@ form {
     border: 1px solid black;
     padding-top: 15px;
     padding-right: 1px ;
+    padding-bottom: 15px;
+    margin-bottom: 20px ;
 
 }
 input[type=text] {
@@ -104,4 +108,33 @@ label {
 #ymsg {
     height: 80px;
     border: 1px solid darkgray;
+}
+
+#choose {
+    font-size: 12px;
+    font-weight:bold;
+    margin-left: 10px;
+}
+
+h4{
+    font-size: medium;
+}
+
+button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 6px ;
+    padding-right: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2px;
+    border:1px solid black;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+footer {
+    font-size: 12px;
+    text-align: right;
+    font-weight: bold;
 }
