@@ -39,17 +39,12 @@ body {
 nav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
-nav a {
-    border-right: 1px solid ;
-    padding-right: 70px;
+a {
     text-decoration: none;
-  }
-  
-nav a:last-child {
-    border-right: none;
-  }
+}
   
 main {
     background-color: #dae9e7;
@@ -85,4 +80,28 @@ section img {
 
 ul {
     padding-left: 12px;
+}
+
+form {
+    border: 1px solid black;
+    padding-top: 15px;
+    padding-right: 1px ;
+
+}
+input[type=text] {
+    width: 95%;
+    border:1px solid lightgray;
+    margin-left: 12px;
+    padding: 2px;
+  }
+
+label {
+    font-size: 12px;
+    font-weight:bold;
+    margin-left: 10px;
+}
+
+#ymsg {
+    height: 80px;
+    border: 1px solid darkgray;
 }

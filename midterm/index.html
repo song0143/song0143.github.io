@@ -22,7 +22,7 @@
         </header>
         <main>
             <nav>
-                <a href="#home">Home</a>
+                <a href="#home">HOME</a>
                 <a href="#story">STORY</a>
                 <a href="#contact">CONTACT</a>
             </nav>
@@ -45,6 +45,28 @@
                 </section>
                 <section id="contact">
                     <h3>Contact to learn more</h3>
+                    <form action="about.html" method="get">
+                        <div>
+                            <label for="yname">Your Name</label>
+                            <input type="text" id="yname" name="yname">
+                            <label for="yemail">Your Email</label>
+                            <input type="text" id="yemail" name="yemail">
+                            <label for="ymsg">Your Message</label>
+                            <input type="text" id="ymsg" name="ymsg"> 
+                        </div>
+                        <div>
+                            <h4>Would you like to visit the starfish?</h4>
+                            <label for="yes">Yes</label>
+                            <input type="radio" id="yes" name="reply" value="yes">
+                            <label for="no">No</label>
+                            <input type="radio" id="no" name="reply" value="no">
+                            <label for="maybe">Maybe</label>
+                            <input type="radio" id="maybe" name="reply" value="maybe">
+                        </div>
+                        <div>
+                            <button type="submit">SEND</button>
+                        </div>
+                      </form>
                 </section>
             </article>
         </main>
