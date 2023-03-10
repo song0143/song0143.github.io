@@ -1,14 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #aad4cf; /* 蓝色背景 */
+    background-color: #aad4cf; /* blue color of the whole background.*/
   }
   
 .container {
-    max-width: 800px; /* 设置最大宽度 */
-    margin: 0 auto; /* 居中 */
-    padding: 0px 50px 0px 50px; /* 左右各留出空白区域 */
-    box-sizing: border-box; /* 设置盒模型为border-box */
+    max-width: 800px; 
+    margin: auto; 
+    padding: 0px 50px 0px 50px; /* set the top, right, bottom and left. */
+    box-sizing: border-box; 
   }
 
 .header-container {
@@ -23,13 +23,46 @@ body {
   }
   
 .header-container h1 {
-    position: absolute;
+    position: absolute;/*make sure the words on top of the image*/
     top: 50%;
-    left: 50%;
+    left: 50%;/*adjust the top and left to center the headline.*/
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 1;/*place the title on top of the image.*/
     color: #fff;
     font-size: 3rem;
     text-shadow: 2px 2px 4px #000;
   }
   
+main {
+    background-color:  #add8e6 ;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+  }
+
+h2,h3 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+section p, ul {
+    font-size: 8px;
+    line-height: 1.2;
+}
+
+li {
+    line-height: 1;
+}
+
+section img {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+
+ul {
+    padding-left: 12px;
+}
