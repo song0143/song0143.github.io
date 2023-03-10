@@ -38,20 +38,21 @@ body {
   
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around;/*Make the navigation words evenly distributed in a row*/
     align-items: center;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none;/*Underline removal*/
 }
   
 main {
-    background-color: #dae9e7;
+    background-color: #dae9e7;/*Change the background color of the central area*/
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 0px;
     padding-bottom: 15px;
+    /*Those paddings let the main content have a gap from the edge and not cramped*/
     margin-top: 0px;
     border-top: 0px;
   }
@@ -61,12 +62,13 @@ h2,h3 {
     padding-bottom: 0px;
     margin-top: 10px;
     margin-bottom: 6px;
-}
+}/*Adjust the position and style of subheadings*/
+
 section p, ul {
     font-size: 8px;
     line-height: 1.2;
     font-weight: 400;
-}
+}/*Adjust the font size, line spacing, and thickness of paragraph content and lists*/
 
 li {
     line-height: 1;
@@ -78,7 +80,7 @@ section img {
     height: auto;
     margin-right: 15px;
     margin-bottom: 20px;
-  }
+  }/*Let the picture lean to the left, resize it, and space it a certain distance from the text*/
 
 ul {
     padding-left: 12px;
@@ -90,25 +92,25 @@ form {
     padding-right: 1px ;
     padding-bottom: 15px;
     margin-bottom: 20px ;
+}/*Adjusting form edges*/
 
-}
 input[type=text] {
     width: 95%;
     border:1px solid lightgray;
     margin-left: 12px;
     padding: 2px;
-  }
+  }/*Design the style of the input box*/
 
 label {
     font-size: 12px;
     font-weight:bold;
     margin-left: 10px;
-}
+}/*label adjust*/
 
 #ymsg {
     height: 80px;
     border: 1px solid darkgray;
-}
+}/*Zoom in on the input box of the message and adjust the edges*/
 
 #choose {
     font-size: 12px;
@@ -131,10 +133,10 @@ button {
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+}/*Adjust the style of the submit element*/
 
-}
 footer {
     font-size: 12px;
     text-align: right;
     font-weight: bold;
-}
+}/*adjust the footer*/
