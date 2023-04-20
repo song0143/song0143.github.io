@@ -6,29 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
     <link href="css/main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41996d43a2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="content">
     <!--set the main content as a container to make the left and right has margin. -->
        <header>
         <div class="firstpart">
-            <img src="./images/logo.png" alt="three stars">
+            <img src="./images/logo.png" alt="three stars" class="logo">
             <nav>
  <!--<nav> is the semantic tag in HTML5 used to define an area containing navigation links -->
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#aboutus">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="list">
+                <li class="list-item"><a href="#home">Home</a></li>
+                <li class="list-item"><a href="#aboutus">About Us</a></li>
+                <li class="list-item"><a href="#services">Services</a></li>
+                <li class="list-item"><a href="#team">Team</a></li>
+                <li class="list-item"><a href="#contact">Contact</a></li>
                 <!--<a href="#">is a common HTML anchor usage.-->
                 <!--"#story"means point the link to where on the page the element with the id attribute of "story" resides.-->
             </ul>
-            <div class="search">
-                <input type="text" placeholder="Search">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Search">
                 <!--使用了 placeholder 属性来设置一个占位符文本，当文本框没有输入任何文本时，这个占位符文本会显示在文本框中-->
-                <button id="search-btn">search</button>
-                <!--这里想让搜索符号是放大镜所以先定义一个id，后面再用css styling-->
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
             </div>
             </nav>
         </div>
