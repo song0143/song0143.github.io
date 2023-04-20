@@ -77,19 +77,5 @@ footer, header, hgroup, menu, nav, section {
       
 }
 
-/* 使用媒体查询来设置屏幕宽度大于等于 760px 时的样式 */
-@media (min-width: 760px) {
-    /* 示例：修改 body 元素的背景颜色为绿色 */
-    body {
-      background-color: green;
-    }
-  
-    /* 在这里编写针对大屏幕界面的其他样式 */
-  }
-
-.content {
-    max-width: 1200px;
-    font-size: 1.2rem;
-}
 
 
