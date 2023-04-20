@@ -8,11 +8,12 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="content">
     <!--set the main content as a container to make the left and right has margin. -->
        <header>
-        <img src="./images/logo.png" alt="three stars">
-        <nav>
+        <div class="firstpart">
+            <img src="./images/logo.png" alt="three stars">
+            <nav>
  <!--<nav> is the semantic tag in HTML5 used to define an area containing navigation links -->
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -29,12 +30,15 @@
                 <button id="search-btn">search</button>
                 <!--这里想让搜索符号是放大镜所以先定义一个id，后面再用css styling-->
             </div>
-        </nav>
-        <h1>Welcome to Three Star Media</h1>
-        <img src="./images/main-banner.jpg" alt="main-banner">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur rem officiis perspiciatis ullam sunt qui, minima harum consequuntur modi sed molestias est esse maiores, aliquam cumque repellendus delectus neque voluptatem!</p>
-        <a href="#connect" class="button">Connect with us</a>
-        <!--other buttons link to other pages have the same style with this one so use the class to locate the group of buttons -->
+            </nav>
+        </div>
+        <div class="welcome">
+            <h1>Welcome to Three Star Media</h1>
+            <img src="./images/main-banner.jpg" alt="main-banner">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur rem officiis perspiciatis ullam sunt qui, minima harum consequuntur modi sed molestias est esse maiores, aliquam cumque repellendus delectus neque voluptatem!</p>
+            <a href="#connect" class="button">Connect with us</a>
+            <!--other buttons link to other pages have the same style with this one so use the class to locate the group of buttons -->
+        </div>
        </header>
        <main>
         <section id="about_us">
@@ -92,7 +96,6 @@
             <div>
                 <img src="./images/bob.jpg" alt="bob">
                 <h3>Bob Rita</h3>
-                
                 <h4>CFO and Co-owner</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil repellat quo rerum laboriosam, non iste at, perspiciatis soluta doloremque iusto ratione illo sapiente fugiat delectus suscipit atque neque necessitatibus perferendis?</p>
             </div>
@@ -101,21 +104,23 @@
             <h2>Contect Us</h2>
             <form action="https://song0143.github.io/final-project" method="get">
             <!--use the action element to locate the URL that the form submit to -->
-            <div>
+            <div class="massage">
                 <h3>Send us a message</h3>
-                <label for="fname">Full Name</label>
-                <input type="text" id="fname" name="fname">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email">
-                <label for="message">Message</label>
-                <input type="text" id="message" name="message">
-                <button type="submit">Send</button>
+                <form action="https://song0143.github.io/final-project/" method="get">
+                    <label for="fname">Full Name</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message">
+                    <button type="submit">Send</button>
+                </form>
             </div>
-            <div>
+            <div class="map">
                 <h3>Location</h3>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89742.3621249809!2d-75.78631213145918!3d45.33975161869986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1szh-CN!2sca!4v1680921881972!5m2!1szh-CN!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div>
+            <div class="hours">
                 <h3>Hours of operation</h3>
                 <table>
                     <tr>
@@ -135,10 +140,12 @@
             </div>
         </section>
         <footer>
-            <p>&copy;Copyright Three Star Media, 2020</p>
-            <p>All images are taken from 
-                <a href="#" class="underline">Unsplash</a>
-            </p>
+            <div class="footer">
+                <p>&copy;Copyright Three Star Media, 2020</p>
+                <p>All images are taken from 
+                    <a href="#" class="underline">Unsplash</a>
+                </p>
+            </div>
         </footer>
        </main>
     </div>
