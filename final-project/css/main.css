@@ -471,20 +471,84 @@ button {
     background-color: #222;
     margin-left: 12px;
     margin-top: 10px;
-    margin-bottom: 10px;
+
 }/*Adjust the style of the submit element*/
 
 .button-font {
     color: #c78c06;
 }
 
+.contact-us .hours table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 
+.contact-us .hours table tr td {
+    border: 1px solid #000;
+    padding: 10px;
+}
 
+.contact-us .hours table tr:first-child td {
+    background-color: #ffe6ac;
+}
 
+.contact-us .hours table tr td.align-center {
+    text-align: center;
+    font-size: 13px;
+}
 
+.contact-us .hours table tr:not(:first-child) td {
+    text-align: left;
+    font-size: 11px;
+}
 
+.map h3 {
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    position: absolute;
+    z-index: 1; 
+}
 
+.map {
+    width: 100%;
+    max-width: 760px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 75%; /* 16:9 高度比例，根据地图的宽高比进行调整 */
+    position: relative;
+    overflow: hidden;
+}
+.map iframe {
+    width: 100%;
+    height: calc(100% - 40px); /* 减去标题的高度 */
+    position: absolute;
+    top: 40px; /* 标题的高度 */
+    left: 0;
+    border: 0;
+}
 
+.footer-text {
+    background-color: #222;
+    padding-top: 20px;
+    padding-left: 7px;
+    padding-bottom: 15px;
+    margin-left: 9px;
+    margin-right: 9px;
+}
 
+.footer-text p {
+    font-size: 8px;
+    padding: 5px;
+    color: #c78c06;
+}
+
+.underline {
+    color: #c78c06;
+}
 
 }
