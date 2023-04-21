@@ -75,6 +75,7 @@ footer, header, hgroup, menu, nav, section {
     text-decoration: none;
     color: #c78c06;
 }
+
 ul li:first-child a{
     color: #222;
 }
@@ -103,8 +104,76 @@ ul li:first-child a{
     border-style: solid;
     padding: 4.5px;
 }   
+.welcome {
+    position: relative; /* 设置父元素为相对定位，用于包裹子元素和定位半透明矩形 */
+    background-image: url('./images/main-banner.jpg'); /* 设置背景图像的URL路径 */
+    background-size: cover; /* 控制背景图像的填充方式，可以根据需求调整 */
+    background-position: center; /* 控制背景图像在容器中的位置，可以根据需求调整 */
+}
 
-      
+.welcome img {
+    width: 100%;
+    height: auto;
+    max-width: 760px;
+    display: block;
+}
+
+.welcome::before {
+    content: ""; /* 用伪元素创建半透明矩形 */
+    position: absolute; /* 设置伪元素为绝对定位，相对于父元素 .welcome */
+    top: 60px; /* 伪元素顶部与父元素顶部对齐 */
+    bottom: 60px;
+    left: 0; /* 伪元素左侧与父元素左侧对齐 */
+    width: 100%; /* 伪元素宽度设置为100%，与父元素宽度一致 */
+    height: calc(100% - 200px); /* 伪元素高度设置为父元素高度减去60像素 */
+    background-color: rgba(34, 34, 34, 0.6); /* 设置半透明矩形背景颜色 */
+    z-index: 1; /* 伪元素设置为负 z-index，使其位于图片下方 */
+  }
+  
+.welcome-text{
+    position: absolute; /* 设置文字容器为绝对定位 */
+    z-index: 2;
+    top: 60px;
+    padding-top: 30px; 
+    padding-bottom: 30px;
+    padding-left: 12px;
+    padding-right: 25px;
+    color: #fff; /* 设置文字容器中的文字颜色，根据实际需求调整 */
+}
+
+  .welcome h1 {
+    font-weight: 1000;
+    font-size: 60px;
+    position: absolute;
+    z-index: 2; /* 将图像、标题、段落和按钮的层级设置为 1，使其在半透明矩形上面 */
+  }
+
+#welp {
+    font-size: 12px;
+    padding-top: 200px;
+    padding-bottom: 12px;
+}
+
+#connect {
+    position: absolute;
+    top:100%;
+    background-color: #c78c06;
+    padding: 30px;
+    font-size: large;
+}
+
+#connect a {
+    text-decoration: none;
+    color: black;
+}
+
+#connect i {
+    color:black;
+}
+
+
+
+
 }
 
 
