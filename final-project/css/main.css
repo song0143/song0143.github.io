@@ -341,6 +341,76 @@ ul li:first-child a{
     color:#fff;
 }
 
+.our-team {
+    position: relative;
+    margin:12px;
+  }
+
+  .our-team h2 {
+    display: flex;
+    font-weight:600;
+    font-size: 40px;
+    padding-top: 30px;
+    background-color: #fff;
+    padding-bottom: 20px;
+    padding-left: 12px;
+   
+}
+.team-photo {
+    position: relative;
+    margin:12px;
+}
+
+.team-photo img{
+    width: 100%;
+    height: auto;
+    max-width: 760px;
+    display: block;
+    margin-right: 24px;
+}
+
+.team-text {
+    background-color: #ffe6ac;
+    padding:0;
+    width:100%;/*宽度修改为 100% 以占据父元素宽度，使黄色色块和图片一致宽度。*/
+    height: 170px;
+    position: relative;
+}
+
+.team-text h3 {
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 18px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.add-dash {
+    font-size: 12px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.add-dash::after{
+    content: ""; /* 添加一个伪元素 */
+    display: block;
+    position: absolute; /* 设置伪元素为绝对定位，使其相对于容器定位 */
+    bottom: 93px; /* 设置伪元素距离容器底部的距离为50像素，即横线的高度 */
+    left: 10px;
+    right: 10px;
+    height: 1.2px; /* 设置伪元素的高度为1.2像素，即横线的高度 */
+    background-color: #c78c06; /* 设置横线的颜色 */
+}
+
+.team-text p {
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 
 
