@@ -836,7 +836,7 @@ button {
 }
 
 .digital p {
-    font-size: 12px;
+    font-size: 5px;
     padding-top: 20pxpx;
     padding-bottom: 12px;
     position: relative;
@@ -846,12 +846,13 @@ button {
 
 .plans {
     position: absolute;/*用这个和top来把按钮挪到容器最下方*/
-    top:60%;
-/*不知道为什么flex无法让按钮伸缩大小*/
+    top:68%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #222;
-    font-size: large;
-    padding:30px;
-    margin-left: 10px;
+    font-size: small;
+    padding: 25px;
+    width:80%;
 }
 
 .plans a {
@@ -862,6 +863,7 @@ button {
 .plans i {
     color:#fff
 }
+
 
 
 
