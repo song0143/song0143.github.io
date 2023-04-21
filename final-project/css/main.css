@@ -680,7 +680,7 @@ button {
     
       .welcome h1 {
         display: flex;
-        font-weight: 3000;
+        font-weight: 900;
         font-size: 70px;
         position: absolute;
         margin-left: 60px;
@@ -718,7 +718,45 @@ button {
     }
     
 
-
+    .about-us {
+        background-color: #ffe6ac;
+        padding: 12px;
+        height: 420pxx;
+        display: flex;
+        align-items: center;
+    }
+    
+    .about-us-img-container {
+        display: flex;
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    .about-us img {
+        height: auto;
+        width: 45%;
+        margin-left: 60px;
+    }
+    
+    .about-us-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        margin-left: 10px;
+        margin-right: 60px;
+    }
+    
+    .about-us h2 {
+        font-weight: 600;
+        font-size: 50px;
+    }
+    
+    .about-us p {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+    
 
 
 
