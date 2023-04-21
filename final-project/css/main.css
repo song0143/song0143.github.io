@@ -43,7 +43,7 @@ footer, header, hgroup, menu, nav, section {
     background-color:#c78c06; /* 背景颜色 */
     padding: 5px; /* 距离四周的距离 */
     width: 100%; /* 包含盒子的宽度 */
-    height: calc(69% - 50px); /* 计算高度，减去下面列表的高度和间距 */
+    height: calc(70% - 30px); /* 计算高度，减去下面列表的高度和间距 */
     margin: auto auto 20px; /* 上下间距为 20px，左右居中 */
     box-sizing: border-box; /* 盒子大小包含 padding */
 }
@@ -552,3 +552,94 @@ button {
 }
 
 }
+
+
+
+/* 使用媒体查询来设置屏幕宽度大于等于 760px 时的样式 */
+@media (min-width: 760px) {
+    
+    .firstpart {
+        background-color: #222;
+        display: flex;
+        align-items: center;
+        padding-left: 60px;
+        padding-right:60px;
+        padding-top:20px ;
+        padding-bottom: 20px;
+    }
+    
+    .image-box img {
+        width:70px;
+        height: 70px;
+    }
+    
+    nav {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .list {
+        display: flex;
+        list-style: none;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0;
+    }
+    
+    .list-item {
+        display:flex;
+        margin-right: 30px; 
+        margin-left:30px;/* 增加导航键之间的距离为30px */
+    }
+    
+    .home {
+        background-color: #c78c06;
+        color: #222;
+        padding: 5px 10px;
+        border-radius: 4px;
+        width: 50px; /* 设置宽度 */
+        height: 30px; /* 设置高度 */
+        text-align: center; /* 居中文字 */
+
+    }
+    
+    ul li:first-child a{
+        color: #222;
+        background-color: #c78c06;
+        padding:10px 20px 10px 20px;
+    }
+  
+    .list-item a {
+        color: #c78c06;
+        text-decoration: none;
+    }
+    
+    .search-box {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        margin-left: ;
+    }
+    
+    .search-input {
+        padding: 5px;
+    }
+    
+    .fa-sharp {
+        color: #c78c06;
+        border: 1px solid #c78c06;
+        padding: 5px;
+        margin-left: 5px;
+    }
+    
+
+    
+  }
+
+.content {
+    max-width: 1200px;
+    font-size: 1.2rem;
+}
+
