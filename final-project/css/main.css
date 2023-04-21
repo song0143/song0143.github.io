@@ -142,6 +142,7 @@ ul li:first-child a{
 }
 
   .welcome h1 {
+    display: flex;
     font-weight: 1000;
     font-size: 60px;
     position: absolute;
@@ -155,8 +156,9 @@ ul li:first-child a{
 }
 
 #connect {
-    position: absolute;
+    position: absolute;/*用这个和top来把按钮挪到容器最下方*/
     top:100%;
+    display: flex;/*不知道为什么flex无法让按钮伸缩大小*/
     background-color: #c78c06;
     padding: 30px;
     font-size: large;
@@ -171,25 +173,37 @@ ul li:first-child a{
     color:black;
 }
 
+.about-us {
+    background-color: #ffe6ac;
+    padding:12px;
+    height: 500px;
+    position: relative;
+}
 
+.about-us img {
+    width: 100%;
+    height: auto;
+    max-width: 760px;
+    display: block;
+}
 
+.about-us h2 {
+    display: flex;
+    font-weight:600;
+    font-size: 40px;
+    position: absolute;
+    padding-top: 30px;
+}
 
+.about-us p {
+    font-size: 12px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    
+}
 }
 
 
-/* 使用媒体查询来设置屏幕宽度大于等于 760px 时的样式 */
-@media (min-width: 760px) {
-    /* 示例：修改 body 元素的背景颜色为绿色 */
-    body {
-      background-color: green;
-    }
-  
-    /* 在这里编写针对大屏幕界面的其他样式 */
-  }
-
-.content {
-    max-width: 1200px;
-    font-size: 1.2rem;
-}
 
 
