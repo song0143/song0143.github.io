@@ -275,6 +275,80 @@ ul li:first-child a{
     color:#fff
 }
 
+.vision {
+    position: relative; /* 设置父元素为相对定位，用于包裹子元素和定位半透明矩形 */
+    background-image: url('./images/vision.jpg'); /* 设置背景图像的URL路径 */
+    background-size: cover; /* 控制背景图像的填充方式，可以根据需求调整 */
+    background-position: center; /* 控制背景图像在容器中的位置，可以根据需求调整 */
+}
+
+.vision img {
+    width: 100%;
+    height: 280px;
+    max-width: 760px;
+    display: block;
+    margin: 20px 12px 10px 12px;
+    padding-right: 12px;
+}
+
+.vision-text{
+    position: absolute; /* 设置文字容器为绝对定位 */
+    z-index: 1;
+    top: 30px;
+    padding-top: 0px; 
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #fff; /* 设置文字容器中的文字颜色，根据实际需求调整 */
+}
+
+  .vision h3 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 2px;
+    display: flex;
+    position: absolute;
+    z-index: 1; /* 将图像、标题、段落和按钮的层级设置为 1，使其在半透明矩形上面 */
+  }
+
+.vision p {
+    font-size: 12px;
+    padding-top: 90px;
+    padding-bottom: 12px;
+}
+
+.vision-button {
+    position: absolute;/*用这个和top来把按钮挪到容器最下方*/
+    top:80%;
+/*不知道为什么flex无法让按钮伸缩大小*/
+    background-color:rgba(34, 34, 34, 0.6);
+    padding: 25px;
+    margin-top:10px;
+    border-color: #c78c06 ;
+    border:1px;/*不知道为啥画不出边界线*/
+    font-size: large;
+}
+
+.vision-button a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.vision-button i {
+    color:#fff;
+}
+
+
+
+
+
+
+
+
+
 
 
 
