@@ -167,6 +167,7 @@ ul li:first-child a{
 #connect a {
     text-decoration: none;
     color: black;
+    margin-right: 10px;
 }
 
 #connect i {
@@ -515,7 +516,6 @@ button {
 }
 
 .map {
-    width: 100%;
     max-width: 760px;
     margin-left: 10px;
     margin-right: 10px;
@@ -558,6 +558,12 @@ button {
 /* 使用媒体查询来设置屏幕宽度大于等于 760px 时的样式 */
 @media (min-width: 760px) {
     
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px; 
+    }
+
     .firstpart {
         background-color: #222;
         display: flex;
@@ -620,7 +626,7 @@ button {
         display: flex;
         align-items: center;
         text-align: left;
-        margin-left: ;
+        margin-right:60px;
     }
     
     .search-input {
@@ -634,6 +640,88 @@ button {
         margin-left: 5px;
     }
     
+
+    .welcome {
+        position: relative; /* 设置父元素为相对定位，用于包裹子元素和定位半透明矩形 */
+        background-image: url('./images/main-banner.jpg'); /* 设置背景图像的URL路径 */
+        background-size: cover; /* 控制背景图像的填充方式，可以根据需求调整 */
+        background-position: center; /* 控制背景图像在容器中的位置，可以根据需求调整 */
+    }
+    
+    .welcome img {
+        width: 100%;
+        height: 550px;
+        display: block;
+    }
+    
+    .welcome::before {
+        content: ""; /* 用伪元素创建半透明矩形 */
+        position: absolute; /* 设置伪元素为绝对定位，相对于父元素 .welcome */
+        top: 40px; /* 伪元素顶部与父元素顶部对齐 */
+        bottom: 60px;
+        right: 60px;/*一直右边没距离，直到我删了width: 100% */
+        left: 60px; /* 伪元素左侧与父元素左侧对齐 */
+        height: calc(100% - 120px); /* 伪元素高度设置为父元素高度减去60像素 */
+        background-color: rgba(34, 34, 34, 0.6); /* 设置半透明矩形背景颜色 */
+        z-index: 1; /* 伪元素设置为负 z-index，使其位于图片下方 */
+      }
+      
+    .welcome-text{
+        position: absolute; /* 设置文字容器为绝对定位 */
+        z-index: 1;
+        top: 60px;
+        padding-top: 30px; 
+        padding-bottom: 30px;
+        padding-left: 12px;
+        padding-right: 25px;
+        margin-right: 60;
+        color: #fff; /* 设置文字容器中的文字颜色，根据实际需求调整 */
+    }
+    
+      .welcome h1 {
+        display: flex;
+        font-weight: 3000;
+        font-size: 70px;
+        position: absolute;
+        margin-left: 60px;
+        margin-right: 60px;
+        z-index: 2; /* 将图像、标题、段落和按钮的层级设置为 1，使其在半透明矩形上面 */
+      }
+    
+    #welp {
+        font-size: 12px;
+        padding-top: 200px;
+        padding-bottom: 12px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    #connect {
+        position: absolute;/*用这个和top来把按钮挪到容器最下方*/
+        top:100%;
+    /*不知道为什么flex无法让按钮伸缩大小*/
+        background-color: #c78c06;
+        padding: 30px;
+        margin-left: 60px;
+        margin-bottom: 40px;
+        font-size: large;
+    }
+    
+    #connect a {
+        text-decoration: none;
+        color: black;
+        margin-right: 10px;
+    }
+    
+    #connect i {
+        color:black;
+    }
+    
+
+
+
+
+
 
     
   }
