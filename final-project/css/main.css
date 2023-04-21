@@ -762,7 +762,6 @@ button {
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(8,1fr);
     
-
 }
 
 .field-1 .services1:nth-child(1){
@@ -864,7 +863,300 @@ button {
     color:#fff
 }
 
+.vision {
+    position: relative; /* 设置父元素为相对定位，用于包裹子元素和定位半透明矩形 */
+    background-image: url('./images/vision.jpg'); /* 设置背景图像的URL路径 */
+    background-size: cover; /* 控制背景图像的填充方式，可以根据需求调整 */
+    background-position: center; /* 控制背景图像在容器中的位置，可以根据需求调整 */
+}
 
+.vision img {
+    width: 100%;
+    height: 330px;
+    display: block;
+}
+
+.vision-text{
+    position: absolute; /* 设置文字容器为绝对定位 */
+    z-index: 1;
+    top: 30px;
+    padding-top: 0px; 
+    padding-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    color: #fff; /* 设置文字容器中的文字颜色，根据实际需求调整 */
+}
+
+  .vision h3 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 2px;
+    display: flex;
+    position: absolute;
+    z-index: 1; /* 将图像、标题、段落和按钮的层级设置为 1，使其在半透明矩形上面 */
+  }
+
+.vision p {
+    font-size: 12px;
+    padding-top: 90px;
+    padding-bottom: 12px;
+}
+
+.vision-button {
+    position: absolute;/*用这个和top来把按钮挪到容器最下方*/
+    top:80%;
+/*不知道为什么flex无法让按钮伸缩大小*/
+    background-color:rgba(34, 34, 34, 0.6);
+    padding: 25px;
+    margin-top:10px;
+    border-color: #c78c06 ;
+    border:1px;/*不知道为啥画不出边界线*/
+    font-size: large;
+}
+
+.vision-button a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.vision-button i {
+    color:#fff;
+}
+
+.our-team {
+    position: relative;
+    margin:12px;
+  }
+
+  .our-team h2 {
+    display: flex;
+    font-weight:600;
+    font-size: 50px;
+    padding-top: 30px;
+    background-color: #fff;
+    padding-bottom: 20px;
+    margin-left: 60px;
+
+}
+.team-photo {
+    position: relative;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.team-photo img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.team-text {
+    background-color: #ffe6ac;
+    padding:0;
+    width:100%;/*宽度修改为 100% 以占据父元素宽度，使黄色色块和图片一致宽度。*/
+    height: 177px;
+    position: relative;
+}
+
+.team-text h3 {
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 18px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.add-dash {
+    font-size: 12px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.add-dash::after{
+    content: ""; /* 添加一个伪元素 */
+    display: block;
+    position: absolute; /* 设置伪元素为绝对定位，使其相对于容器定位 */
+    bottom: 93px; /* 设置伪元素距离容器底部的距离为50像素，即横线的高度 */
+    left: 10px;
+    right: 10px;
+    height: 1.2px; /* 设置伪元素的高度为1.2像素，即横线的高度 */
+    background-color: #c78c06; /* 设置横线的颜色 */
+}
+
+.team-text p {
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.stack-8{
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  .stack-8 .team-photo:nth-child(1){
+    flex-basis: calc(38%);
+  }
+  .stack-8 .team-photo:nth-child(2){
+    flex-basis: calc(35%);
+  }
+
+.contact-us {
+    position: relative;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+.contact-us h2 {
+    display: flex;
+    font-weight:600;
+    font-size: 40px;
+    padding-top: 30px;
+    background-color: #fff;
+    padding-bottom: 20px;
+    padding-left: 12px;
+   
+}
+
+.contact-us h3 {
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.form-text {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 20px ;
+}/*Adjusting form edges*/
+
+input[type=text] {
+    width: 95%;
+    border:1px solid gray;
+    margin-left: 12px;
+    padding: 5px;
+  }/*Design the style of the input box*/
+
+label {
+    font-size: 12px;
+    margin-left: 10px;
+}/*label adjust*/
+
+#message {
+    height: 100px;
+    border: 1px solid darkgray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}/*Zoom in on the input box of the message and adjust the edges*/
+
+
+button {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 6px ;
+    padding-right: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border:1px solid black;
+    background-color: #222;
+    margin-left: 12px;
+    margin-top: 10px;
+
+}/*Adjust the style of the submit element*/
+
+.button-font {
+    color: #c78c06;
+}
+
+.contact-us .hours table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 60px;
+}
+
+.contact-us .hours table tr td {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.contact-us .hours table tr:first-child td {
+    background-color: #ffe6ac;
+}
+
+.contact-us .hours table tr td.align-center {
+    text-align: center;
+    font-size: 13px;
+}
+
+.contact-us .hours table tr:not(:first-child) td {
+    text-align: left;
+    font-size: 11px;
+}
+
+
+.map {
+    order: 3;
+}
+
+@media (max-width: 767px) {
+    .massage, .map {
+        flex-basis: 100%;
+    }
+}
+
+.map h3 {
+    font-size: 26px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    position: absolute;
+    z-index: 1; 
+}
+
+.map {
+    max-width: 760px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 75%; /* 16:9 高度比例，根据地图的宽高比进行调整 */
+    position: relative;
+    overflow: hidden;
+}
+.map iframe {
+    width: 100%;
+    height: calc(100% - 40px); /* 减去标题的高度 */
+    position: absolute;
+    top: 40px; /* 标题的高度 */
+    left: 0;
+    border: 0;
+}
+
+.footer-text {
+    background-color: #222;
+    padding-top: 20px;
+    padding-left: 7px;
+    padding-bottom: 15px;
+}
+
+.footer-text p {
+    font-size: 8px;
+    padding: 5px;
+    color: #c78c06;
+    margin-left: 60px;
+}
+
+.underline {
+    color: #c78c06;
+}
 
 
   }
