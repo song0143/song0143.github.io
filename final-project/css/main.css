@@ -761,6 +761,8 @@ button {
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(8,1fr);
+    
+
 }
 
 .field-1 .services1:nth-child(1){
@@ -788,7 +790,78 @@ button {
     grid-row: 5 / span 4 ;
 }
 
+.our-services {
+    position: relative;
+    margin:12px;
+  }
 
+  .our-services h2 {
+    display: flex;
+    font-weight:600;
+    font-size: 40px;
+    padding-top: 30px;
+    background-color: #fff;
+    padding-bottom: 20px;
+    padding-left: 12px;
+    margin-left: 60px;
+   
+}
+.services1 {
+    position: relative;
+    margin:12px;
+}
+
+.services1 img{
+    width: 100%;
+    height: auto;
+    max-width: 760px;
+    display: block;
+    margin-right: 24px;
+}
+
+.digital {
+    background-color: #ffe6ac;
+    padding:0;
+    width:100%;/*宽度修改为 100% 以占据父元素宽度，使黄色色块和图片一致宽度。*/
+    height: 250px;
+    position: relative;
+}
+
+.digital h3 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.digital p {
+    font-size: 12px;
+    padding-top: 20pxpx;
+    padding-bottom: 12px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.plans {
+    position: absolute;/*用这个和top来把按钮挪到容器最下方*/
+    top:60%;
+/*不知道为什么flex无法让按钮伸缩大小*/
+    background-color: #222;
+    font-size: large;
+    padding:30px;
+    margin-left: 10px;
+}
+
+.plans a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+.plans i {
+    color:#fff
+}
 
 
 
